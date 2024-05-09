@@ -1,0 +1,485 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    background-color: #047a92;
+    
+    height: 200px;
+    margin: 0px; 
+}
+
+header img{
+    height: 130px;
+    width: 130px;
+}
+
+main {
+
+    margin-bottom: 30px;    
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+nav {
+    align-items: center;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+    margin-top: 0px;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffc045;
+    margin-top: 0px;
+    height: 50px;
+
+}
+
+nav li{
+    margin-top: 0px;
+
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+nav li a{
+    margin-top: 0px;
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+nav li:hover{
+    background-color: #047a92;
+}
+
+li{
+    margin: 0px;
+}
+
+h1{
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #047a92;
+    padding-left: 10px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin: 0px;
+}
+
+h2{
+    color: #047a92;
+    padding-left: 10px;
+    font-weight: 500;
+}
+
+h3{
+    color: #ffc045;
+}
+
+
+h4{
+    color: #0a91ab;
+}
+
+.videojuegos img{
+    margin: none;
+    width: 100%;
+}
+
+.videojuegos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.videojuegos article{
+    margin: 10px;
+    height: 500px;
+    /*No utilitzo percentatge al width perquè considero que sempre ha de tenir la mateixa mida*/
+    width: 480px;
+    border-radius: 10px;
+    border: solid 1px #ffc045;
+}
+
+.linkVideojuegos{
+    background-color: #ffc045;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 80px;
+    height: 30px;    
+    position:relative;
+    top: 35%; left: 80%;
+}
+
+.linkVideojuegos:hover{
+    
+    background-color: #047a92;
+}
+
+.linkVideojuegos a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.textoVideojuegos{
+    position:relative;
+    top: -40px; left: 0px;
+    padding: 10px;
+    font-weight: lighter;
+}
+
+.textoEscondido{
+    display: none;
+}
+
+aside {
+    display: inline;
+    height: 100%;
+    background-color: #d3f7ff;
+}
+
+.trucosNoticias{
+    display: flex;
+    background-color: #d3f7ff;
+}
+
+.trucosNoticias section{
+    background-color: white;
+}
+
+.trucosNoticias h2{
+    text-align: center;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.trucos{
+    height: 100%;
+    width: 600px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.trucos ul{
+    list-style: none;
+    margin: 0px;
+    padding: 15px;
+}
+
+.trucos ul li a{
+    font-weight: 500;
+}
+
+.noticias {
+    display: inline-block;
+    text-align: center;
+}
+
+.noticias article img{
+    width: 580px;
+    height: 320px;
+}
+
+.noticias article{
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    height: 500px;
+    /*No utilitzo percentatge al width perquè considero que sempre ha de tenir la mateixa mida*/
+    width: 580px;
+}
+
+
+/*Utilizo una clase en vez de referenciar al link directamente para poder cambiar el tamaño que ocupa*/
+.botonImagen{
+    color: black;
+    text-decoration: none;
+    background-color: #ffc045;
+    font-weight: 600;
+    padding: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: right;
+    background-color: #ffc045;
+    border-radius: 5px;
+    position: relative;
+    top: -40px;
+    left: 18px;
+    z-index: 1;
+    width: 90%;
+}
+
+.botonImagen:hover{
+    width: 98%;
+    margin: 0px;
+    height: 30px;
+    left: 0px;
+    font-weight: 700;
+    background-color:#3090a3;
+}
+
+.ranking{
+    background-color: #8A8070;
+    margin: 0px;
+}
+
+.ranking h2{
+    color: #ffc045;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.ranking ul{
+    text-align: center;
+    list-style: none;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+
+.ranking ul li h3{
+    color: black;
+}
+
+.ranking ul li p{
+    font-weight: 200;
+}
+
+footer{
+    margin-top: 0px;
+    height: 55px;
+    border-top: solid 2px black
+}
+
+
+footer ul{
+    margin-left: 20px;
+    position: relative;
+    list-style: none;
+    display: flex;
+    z-index: 2;
+}
+
+footer ul li{
+    padding-left: 5px;
+    padding-right: 5px;
+    
+}
+
+footer address{
+    position: relative;
+    padding: -10px;
+    top: -75px;
+    text-align: center;
+}
+
+.derechos{
+    text-align: right;
+    position: relative;
+    padding: -10px;
+    margin-right: 20px;
+    top: -135px;
+}
+
+
+
+/*PÁGINA THE LAST OF US*/
+
+.videojuegoEspecifico{
+    text-align: center;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.videojuegoEspecifico article{
+    text-align: left;
+    font-size: 16px;
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: white;
+    border: solid 2px #ffc045;
+    background-color:#0a91ab;
+}
+
+.videojuegoEspecifico .linkVideojuegos{
+    color: white;
+    position: relative;
+    top: 10px
+}
+
+.videojuegoEspecifico img{
+    width: 100%;
+}
+
+/*PÁGINA NOTICIA MARIO*/
+
+.noticiaEspecifica{
+    text-align: center;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+
+
+}
+
+.noticiaEspecifica article{
+    text-align: left;
+    font-size: 16px;
+    width: 70%;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    color: black;
+    border: solid 2px #ffc045;
+}
+
+.noticiaEspecifica img{
+    width: 100%;
+}
+
+/*PÁGINA LISTADO VIDEOJUEGOS*/
+
+.listadoVideojuegos{
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.listadoVideojuegos article{
+    display: inline-block;
+    flex-direction: row;
+    margin: 10px;
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 1px #ffc045;
+}
+
+.listadoVideojuegos h3{
+    font-size: 30px;
+    color:#047a92
+}
+
+.listadoVideojuegos img{
+    padding: 20px;
+    padding-bottom: 20px;
+}
+
+.listadoVideojuegos article > *{
+    display: inline-block;
+}
+
+.masInfo{
+    background-color: #ffc045;
+    border-radius: 5px;
+    float: right;
+    text-align: center;
+    margin: 0px;
+    width: 100px;
+    height: 30px;
+    margin: 30px;
+}
+
+.masInfo:hover{
+    background-color: #047a92;
+}
+
+.listadoVideojuegos a{
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+/*Formulario de contacto*/
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: solid 2px #ffc045;
+    border-radius: 5px;
+}
+
+label {
+    color: #ffc045;
+    display: block;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+input{
+    width: 100%;
+    height: 40px;
+    border-radius: 10px;
+}
+
+input[type="submit"]{
+    margin-top: 20px;
+    background-color:#ffc045;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+input[type="submit"]:hover{
+    cursor: pointer;
+    background-color:#047a92;
+    color: white;
+}
+
+textarea{
+    width: 100%;
+    height: 400px;
+    border: solid 2px;
+    border-radius: 10px;
+}
+
+iframe {
+    margin: 0 auto;
+    margin-bottom: 50px;
+    display: block;
+
+}
+
+.ubicacion{
+    background-color: #d3f7ff;
+    padding: 20px;
+}
+
+.ubicacion h2{
+    text-align: center
+}
+
